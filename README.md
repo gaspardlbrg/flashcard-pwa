@@ -27,4 +27,4 @@ Check out the [Live Demo](https://gaspardlbrg.github.io/flashcard-pwa/).
 
 This application is built entirely from scratch as a learning exercise to better understand web development, service workers, and local storage.
 
-Made by [Gaspard Le Borgne]{https://gaspard-lb.web.app/}. 100% AI-free code.
+Made by [Gaspard Le Borgne](https://gaspard-lb.web.app/). 100% AI-free code.
