@@ -1,0 +1,248 @@
+/* Palette de couleur : https://coolors.co/palette/fffcf2-ccc5b9-403d39-252422-eb5e28
+                        https://coolors.co/palette/0466c8-0353a4-023e7d-002855-001845-001233-33415c-5c677d-7d8597-979dac
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+.cormorant-unicase-light {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.cormorant-unicase-regular {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cormorant-unicase-medium {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.cormorant-unicase-semibold {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.cormorant-unicase-bold {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.dm-mono-light {
+    font-family: "DM Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.dm-mono-regular {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dm-mono-medium {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dm-mono-light-italic {
+    font-family: "DM Mono", monospace;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.dm-mono-regular-italic {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.dm-mono-medium-italic {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.cormorant-garamond-<uniquifier > {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+:root {
+    --bg-light: #fffcf2;
+    --bg-dark: #252422;
+    --txt-light: black;
+    --txt-dark: white;
+    --act: #eb5e28;
+    --font-main: "Cormorant Garamond", serif;
+    --font-act: "Cormorant Unicase", serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--txt-light);
+}
+
+/* === HEADER === */
+
+header {
+    width: 100%;
+    border-bottom: 3px solid var(--act);
+    padding: 3em;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--font-act);
+    font-weight: 700;
+}
+
+header p {
+    font-style: italic;
+    font-family: var(--font-main);
+}
+
+/* === MAIN === */
+
+main {
+    max-width: 50em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1em;
+}
+
+main div {
+    height: 100vh;
+    font-family: var(--font-main);
+}
+
+/* === HERO === */
+
+.hero {
+    text-align: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    margin: 4rem;
+    font-family: var(--font-main);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.hero h2 em {
+    font-family: var(--font-act);
+    font-weight: 700;
+    font-style: normal;
+}
+
+a.btn {
+    color: var(--txt-light);
+    text-decoration: none;
+    border: 3px solid var(--act);
+    margin: 3em;
+    margin-top: 3em;
+    padding: 10px 50px 10px 50px;
+    transition: 300ms;
+}
+
+a.btn:hover {
+    background-color: var(--act);
+    color: var(--bg-light);
+}
+
+/* === ROADMAP === */
+
+.roadmap {
+    padding: 1rem;
+}
+
+.roadmap h2 {
+    font-family: var(--font-act);
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.roadmap h3 {
+    font-family: var(--font-act);
+}
+
+.roadmap ol {
+    list-style-type: upper-roman;
+    border-left: 3px solid var(--act);
+    padding-left: 35px;
+}
+
+.roadmap ol > li {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.roadmap ol > li:last-child {
+    margin-bottom: 0;
+}
+
+.roadmap h3::before {
+    content: "";
+    position: absolute;
+    left: -44px;
+    top: 20%;
+    transform: translateY(-50%);
+
+    width: 12px;
+    height: 12px;
+    background-color: var(--bg-light);
+    border: 2px solid var(--act);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.roadmap h3.current::before {
+    content: "";
+    position: absolute;
+    left: -43px;
+    top: 20%;
+    transform: translateY(-50%);
+
+    width: 10px;
+    height: 10px;
+    background-color: var(--act);
+    border: 2px solid var(--bg-light);
+    outline: 2px solid var(--act);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* === FOOTER === */
+
+footer {
+    width: 100vw;
+    background-color: var(--bg-dark);
+    color: var(--txt-dark);
+    height: 25vh;
+    padding: 2rem;
+    justify-items: center;
+}
+
+footer a {
+    color: var(--act);
+    text-align: center;
+}
