@@ -2,7 +2,29 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
-      <link rel="stylesheet" href="../style/main.css" />
+      <style>
+
+      :host {
+          display: block;
+          width: 100%
+      }
+
+      header {
+          border-bottom: 3px solid var(--act);
+          padding: 3em;
+          text-align: center;
+      }
+
+      header h1 {
+          font-family: var(--font-act);
+          font-weight: 700;
+      }
+
+      header p {
+          font-style: italic;
+          font-family: var(--font-main);
+      }
+      </style>
 
       <header>
           <h1>Flashcard PWA</h1>
@@ -22,7 +44,29 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
-      <link rel="stylesheet" href="../style/main.css" />
+      <style>
+
+      :host {
+          display: block;
+          width: 100%
+      }
+
+      footer {
+          background-color: var(--bg-dark);
+          color: var(--txt-dark);
+          height: 25vh;
+          padding: 2rem;
+          justify-items: center;
+          margin-top: 25vh;
+      }
+
+      footer a {
+          color: var(--act);
+          text-align: center;
+          text-decoration: none;
+      }
+
+      </style>
 
       <footer>
           <p>

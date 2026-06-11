@@ -73,23 +73,6 @@
     font-style: normal;
 }
 
-:root {
-    --bg-light: white;
-    --bg-dark: #252422;
-    --txt-light: black;
-    --txt-dark: white;
-    --act: #eb5e28;
-    --font-main: "Cormorant Garamond", serif;
-    --font-act: "Cormorant Unicase", serif;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
-
 .card {
     border: 3px solid var(--act);
     width: 32rem;
