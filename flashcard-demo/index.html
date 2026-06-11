@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FlashCard PWA</title>
+
+        <link rel="stylesheet" href="/style/main.css" />
+        <link rel="stylesheet" href="/style/cards.css" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="" />
+        <script src="/js/components.js" defer></script>
+    </head>
+    <body>
+        <!-- HEADER -->
+
+        <page-header></page-header>
+
+        <!-- MAIN -->
+
+        <main>
+            <h2>Flashcard Demo</h2>
+            <div id="flashcard-carroussel">
+                <flash-card class="cardd">
+                    <span slot="recto">Recto</span>
+                    <span slot="verso">Verso</span>
+                </flash-card>
+
+                <flash-card class="cardd">
+                    <span slot="recto">Recto2</span>
+                    <span slot="verso">Verso2</span>
+                </flash-card>
+
+                <flash-card class="cardd">
+                    <span slot="recto">Recto3</span>
+                    <span slot="verso">Verso3</span>
+                </flash-card>
+
+                <ul>
+                    <li id="back">←</li>
+                    <li id="counter">1/x</li>
+                    <li id="next">→</li>
+                </ul>
+
+                <a href="/" class="btn">Homepage</a>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+
+        <page-footer></page-footer>
+
+        <script src="/js/main.js"></script>
+    </body>
+</html>

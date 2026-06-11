@@ -8,17 +8,12 @@
         <link rel="stylesheet" href="style/main.css" />
         <link rel="manifest" href="manifest.json" />
         <meta name="theme-color" content="" />
+        <script src="js/components.js" defer></script>
     </head>
     <body>
         <!-- HEADER -->
 
-        <header>
-            <h1>Flashcard PWA</h1>
-            <p>
-                Personal project to learn more about JavaScript and PWAs ·
-                Currently W.I.P.
-            </p>
-        </header>
+        <page-header></page-header>
 
         <!-- MAIN -->
 
@@ -72,19 +67,15 @@
                         </ul>
                     </li>
                 </ol>
+                <div class="btn-container">
+                    <a href="flashcard-demo/" class="btn">Flashcard demo</a>
+                </div>
             </div>
         </main>
 
         <!-- FOOTER -->
 
-        <footer>
-            <p>
-                Made with love by
-                <a href="https://gaspard-lb.web.app/" target="_blank"
-                    >Gaspard Le Borgne</a
-                >, AI free
-            </p>
-        </footer>
+        <page-footer></page-footer>
 
         <script src="js/main.js"></script>
     </body>

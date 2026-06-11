@@ -78,7 +78,7 @@
 }
 
 :root {
-    --bg-light: #fffcf2;
+    --bg-light: white;
     --bg-dark: #252422;
     --txt-light: black;
     --txt-dark: white;
@@ -129,7 +129,6 @@ main {
 }
 
 main div {
-    height: 100vh;
     font-family: var(--font-main);
 }
 
@@ -138,6 +137,7 @@ main div {
 .hero {
     text-align: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .hero h2 {
@@ -173,6 +173,7 @@ a.btn:hover {
 
 .roadmap {
     padding: 1rem;
+    min-height: 80vh;
 }
 
 .roadmap h2 {
@@ -194,10 +195,6 @@ a.btn:hover {
 .roadmap ol > li {
     position: relative;
     margin-bottom: 30px;
-}
-
-.roadmap ol > li:last-child {
-    margin-bottom: 0;
 }
 
 .roadmap h3::before {
@@ -231,6 +228,12 @@ a.btn:hover {
     z-index: 1;
 }
 
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* === FOOTER === */
 
 footer {
@@ -240,9 +243,11 @@ footer {
     height: 25vh;
     padding: 2rem;
     justify-items: center;
+    margin-top: 25vh;
 }
 
 footer a {
     color: var(--act);
     text-align: center;
+    text-decoration: none;
 }
