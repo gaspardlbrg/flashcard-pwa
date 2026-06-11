@@ -2,7 +2,7 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
-      <link rel="stylesheet" href="/style/main.css" />
+      <link rel="stylesheet" href="./style/main.css" />
 
       <header>
           <h1>Flashcard PWA</h1>
@@ -22,7 +22,7 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
-      <link rel="stylesheet" href="/style/main.css" />
+      <link rel="stylesheet" href="./style/main.css" />
 
       <footer>
           <p>
@@ -44,7 +44,7 @@ class Flashcard extends HTMLElement {
   connectedCallback() {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
-      <link rel="stylesheet" href="/style/cards.css" />
+      <link rel="stylesheet" href="./style/cards.css" />
 
       <div class="card">
           <p class="recto"><slot name="recto"></slot></p>
